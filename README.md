@@ -1,4 +1,4 @@
-# keep-alive-pinger
+# keep-alive
 
 Petit script Node.js qui ping périodiquement une URL pour éviter la mise en
 veille par inactivité d'un service hébergé sur une plateforme free tier
