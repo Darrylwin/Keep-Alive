@@ -14,4 +14,4 @@ jobs:
       - name: Ping target URL
         run: |
           echo "Ping vers ${{ secrets.TARGET_URL }}"
-          curl -sS -o /dev/null -w "HTTP %{http_code}\n" --max-time 20 "${{ secrets.TARGET_URL }}"
+          curl -sS -o /dev/null -w "HTTP %{http_code}\n" --max-time 90 --retry 1 --retry-delay 5 "${{ secrets.TARGET_URL }}"
